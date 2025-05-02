@@ -19,7 +19,7 @@ jobs:
               await github.rest.repos.mergeUpstream({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                branch: 'main'  # 替换为你的分支名（如 master/main）
+                branch: 'master'
               });
               console.log('Sync successful!');
             } catch (error) {
